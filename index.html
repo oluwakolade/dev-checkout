@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Devchallenges</title>
+  </head>
+  <body>
+    <header>
+      <h1>Checkout</h1>
+    </header>
+    <main>
+      <div class="form">
+        <h2>Contact Information</h2>
+        <form action="" class="form-one">
+          <label for="email">E-mail</label>
+
+          <div class="input">
+            <span class="material-symbols-outlined"> mail </span>
+            <input
+              type="email"
+              placeholder="Enter your email..."
+              class="input-field"
+            />
+          </div>
+          <label for="Phone">Phone</label>
+          <div class="input">
+            <span class="material-symbols-outlined"> call </span>
+            <input
+              type="tel"
+              placeholder="Enter your phone..."
+              class="input-field"
+            />
+          </div>
+        </form>
+
+        <h2>Shipping address</h2>
+
+        <form action="" class="form-two">
+          <label for="name">Full name</label>
+
+          <div class="input">
+            <span class="material-symbols-outlined"> person </span>
+            <input
+              type="text"
+              placeholder="Your full name..."
+              class="input-field"
+            />
+          </div>
+
+          <label for="address">Address</label>
+
+          <div class="input">
+            <span class="material-symbols-outlined"> home </span>
+            <input
+              type="text"
+              placeholder="Your address..."
+              class="input-field"
+            />
+          </div>
+          <label for="city">City</label>
+
+          <div class="input">
+            <span class="material-symbols-outlined"> location_city </span>
+            <input type="text" placeholder="Your city..." class="input-field" />
+          </div>
+          <div class="country">
+            <label for="country" class="one">Country</label>
+
+            <div class="input two">
+              <span class="material-symbols-outlined"> globe_uk </span>
+              <input
+                type="text"
+                placeholder="Your country..."
+                class="input-field"
+              />
+            </div>
+
+            <label for="postal" class="three">Postal code</label>
+            <div class="input">
+              <span class="material-symbols-outlined"> package </span>
+              <input
+                type="text"
+                placeholder="Your postal code..."
+                class="input-field four"
+              />
+            </div>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="save information" id="" />
+            <span>Save this information for next time</span>
+          </div>
+        </form>
+
+        <button>Continue</button>
+      </div>
+      <div class="product">
+        <div class="card">
+          <img src="/photo1.png" alt="" />
+          <div class="details">
+            <h3>Vintage Backbag</h3>
+
+            <div class="price">
+              <p class="orange">$54.99</p>
+              <p class="crossed">$94.99</p>
+            </div>
+
+            <div class="quantity-btn">
+              <span class="material-symbols-outlined icon"> add </span>
+              <p>1</p>
+              <span class="material-symbols-outlined icon"> remove </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="/photo2.png" alt="" />
+          <div class="details">
+            <h3>Levi Shoes <span> </span> <span> </span></h3>
+            <div class="price">
+              <p class="orange">$74.99</p>
+              <p class="crossed">$124.99</p>
+            </div>
+
+            <div class="quantity-btn">
+              <span class="material-symbols-outlined icon"> add </span>
+              <p>1</p>
+              <span class="material-symbols-outlined icon"> remove </span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="shipping">
+          <h4>Shipping</h4>
+          <h4>$19</h4>
+        </div>
+        <hr />
+        <div class="total">
+          <h4>Total</h4>
+          <h4>$148.98</h4>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

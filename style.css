@@ -1,0 +1,296 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  max-width: 75rem;
+  margin: 0 auto;
+  height: 100vh;
+  margin-bottom: 5rem;
+}
+h1 {
+  font-size: 2.25rem;
+  margin: 3rem 0;
+  color: #4e5150;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #333333;
+}
+label,
+span {
+  color: #4f4f4f;
+  font-size: 0.75rem;
+}
+h3 {
+  color: #4e5150;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.form-one,
+.form-two {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  align-self: flex-end;
+  padding: 0.6rem 2rem;
+  border-radius: 12px;
+  background: #f2994a;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+input {
+  padding: 0.8rem 8rem;
+  border: 1px solid #828282;
+  border-radius: 12px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  text-align: start;
+  padding-left: 3rem;
+}
+.country {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.one {
+  grid-column: 1/1;
+}
+.two {
+  grid-column: 1/1;
+  grid-row: 2;
+}
+
+.product {
+  background: #f2f2f2;
+  width: 70%;
+  height: fit-content;
+
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.card {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+img {
+  width: 40%;
+  border-radius: 12px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: auto;
+}
+
+.price {
+  display: flex;
+  gap: 2rem;
+}
+
+.price .orange {
+  color: #f2994a;
+}
+
+.price .crossed {
+  text-decoration: line-through;
+}
+
+.quantity-btn {
+  width: fit-content;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.shipping,
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #bdbdbd;
+  margin: 1em 0;
+  padding: 0;
+}
+::placeholder {
+  font-family: inherit;
+  font-size: 0.7rem;
+  color: #828282;
+  font-weight: 600;
+}
+.input {
+  position: relative;
+}
+.input .material-symbols-outlined {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.icon {
+  position: relative;
+  background: #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* img {
+  width: 40%;
+  border-radius: 12px;
+} */
+
+@media (max-width: 78rem) {
+  body {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+
+  .product {
+    width: 100%;
+  }
+}
+
+@media (max-width: 62rem) {
+  body {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+
+  .product {
+    width: 100%;
+  }
+}
+
+@media (max-width: 50.625em) {
+  body {
+    max-width: 45rem;
+    margin: 0 auto;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .quantity-btn {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 44rem) {
+  body {
+    max-width: 30rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  img {
+    width: 30%;
+  }
+  .product {
+    width: 100%;
+    grid-row: 1;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 31rem) {
+  body {
+    max-width: 25rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  img {
+    width: 40%;
+  }
+  .product {
+    width: 100%;
+    grid-row: 1;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  h3,
+  p {
+    font-size: 1rem;
+  }
+
+  .quantity-btn {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 24.4rem) {
+  body {
+    max-width: 20rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .product {
+    width: 100%;
+    grid-row: 1;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+}
